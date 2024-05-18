@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/260b98bd28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader">
+        </div>
+        <p>LOADING</p>
+    </div>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo"><span>S</span>ATYABRATA</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <span>I'm a</span>
+            <span id="element"></span>
+            <h1>Hi, I'm <span>Satyabrata</span><br>Das from India</h1>
+        </div>
+    </div>
+   </div>
+
+   <!-- -------------about----------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="../images/About.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm Satyabrata Das, a Web Designer from India. I specialize in crafting intuitive and engaging digital experiences for web and mobile applications. With a Bachelor's degree in Computer Applications and a passion for continuous learning, I blend aesthetics with functionality to create seamless user interfaces. When I'm not designing, I enjoy exploring new places and indulging in creative hobbies.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')" >Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Designing Web Interfaces</li>
+                        <li><span>App Development</span><br>Designing App Interfaces</li>
+                        <li><span>Python Development</span><br>Developing simple games</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Fresher</span><br>Learning New Skills</li>
+                        <!-- <li><span>Web Development</span><br>Designing Web Interfaces</li>
+                        <li><span>App Development</span><br>Designing App Interfaces</li> -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2019</span><br>Passed Madyamik from WBBSE Board</li>
+                        <li><span>2021</span><br>Passed Higher Secondary from WBBSE Board </li>
+                        <li><span>2025</span><br>Graduated From Siliguri Institute of Technology With BCA Degree</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------Services----------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p> I specialize in creating visually stunning and user-friendly website designs that captivate audiences and effectively convey brand messaging. By leveraging the latest design trends and techniques, I ensure that each website I create is both aesthetically pleasing and highly functional.!</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Python Development</h2>
+                <p>As a Python developer, I offer specialized services aimed at leveraging the power and versatility of Python to build robust and scalable solutions for clients across various industries. With expertise in Python programming language and its rich ecosystem of libraries and frameworks, I deliver tailored solutions that address the unique needs and challenges of each project.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>  
+                <h2>App Development</h2>
+                <p>As an app developer, I offer specialized services focused on creating innovative and user-centric mobile applications tailored to meet the specific needs and objectives of my clients. With expertise in app development technologies and platforms, I deliver seamless and engaging experiences across iOS, Android, and hybrid platforms.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------Projects----------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="../images/todo_list.png" alt="">
+                <div class="layer">
+                    <h3>To do List App</h3>
+                    <p>This ToDo List App is a simple and efficient tool to help users manage their tasks effectively. Whether you're organizing your daily errands, planning a project, or keeping track of your work assignments, this app provides the features you need to stay on top of your tasks. Key Features: Task Management: Create, edit, and delete tasks effortlessl.</p>
+                    <a href="https://github.com/satyaabrata/To_Do_LIst-App" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="../images/tic_tac_toe.jpg" alt="">
+                <div class="layer">
+                    <h3>Tic Tac Toe Game</h3>
+                    <p>"Enjoy a classic game of Tic Tac Toe built with HTML, CSS, and JavaScript. Features intuitive interface, responsive design, two-player mode, win detection, and restart option. Fork, customize, or learn web development with this project!"</p>
+                    <a href="https://github.com/satyaabrata/Tic_Tac_Toe_game" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="../images/chatbot.jpg" alt="">
+                <div class="layer">
+                    <h3>Chat Bot</h3>
+                    <p>This is a BCA enquiry and GUI based chatbot completely built in python using libraries. This chat bot is in the early development phase so it can only respond to day to day questions, basic questions about BCA, solve equations and tell time.</p>
+                    <a href="https://github.com/satyaabrata/chatbot_python_project" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a class="btn" href="#">See More</a>
+    </div>
+</div>
+
+<!-- -------------------contact-------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> sdas70479@gmail.com</p>
+            <p><i class="fa-solid fa-phone-square"></i> 8101745456</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100024414339232" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/satyabrata-das-40a659245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <!-- Replace with your LinkedIn profile URL -->
+                <a href="https://x.com/Satyabrata__das" target="_blank"><i class="fa-brands fa-twitter-square"></i></a> <!-- Replace with your Twitter profile URL -->
+                <a href="https://github.com/satyaabrata" target="_blank"><i class="fa-brands fa-github"></i></a> <!-- Replace with your GitHub profile URL -->
+            </div>
+            <a href="../pdf/Satyabrata Das ~ RESUME.pdf" class="btn btn2 download" download>Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="emial" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="Submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- --------------------CopyRight---------------------------- -->
+<div class="copyright">
+    <p>Copyrigth &copy; Satyabrata. Made by Satyabrata Das <i class="fa-solid fa-heart"></i> </p>
+</div>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer.', 'App Developer.','Python Developer.'],
+          typeSpeed: 50,
+          loop:true,
+        });
+      </script>
+
+<script>
+    
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxPJYAVyH-Csf8M0DFdYHNRA6XlYPuf0mYLNyniwVBc6lfyZQKbCxqsyF7sXAi0Bg0B/exec'
+
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg=document.getElementById("msg")
+
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent Sucessfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
